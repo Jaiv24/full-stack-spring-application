@@ -3,6 +3,7 @@ package com.jaiv.WatchStore;
 import com.jaiv.WatchStore.model.Inquiry;
 import com.jaiv.WatchStore.service.HomeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Controller
+@EnableAutoConfiguration
 public class HomeController {
     @Autowired
     private HomeService homeService;
